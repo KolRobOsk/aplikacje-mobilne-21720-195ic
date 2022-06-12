@@ -35,32 +35,9 @@ const Screen4 = ({ navigation, route }) => {
             navigation.navigate('Screen5', { name: 'Screen5' })
           }
           />
-                      </View>
-   <ActivityIndicator size="small" color="#0011ff" />
-          <ProgressBar
-            percent={75}
-            filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
-          >
-            <Step transition="scale">
-              {({ accomplished }) => (
-            <Img
-              style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-              width="50"
-              src="https://cdn4.iconfinder.com/data/icons/computers-it/48/computer-02-512.png"
-            />
-          )}
-        </Step>
-        <Step transition="scale">
-          {({ accomplished }) => (
-            <Img
-              style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-              width="50"
-              src="http://simpleicon.com/wp-content/uploads/mouse.png"
-            />
-          )}
-        </Step>
-      </ProgressBar>
-         </SafeAreaView >
+          <ActivityIndicator size="small" color="#19ff00" />
+            </View>
+        </SafeAreaView >
 );
 }
 
